@@ -43,58 +43,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>🐦 Gwitter NPM Demo</h1>
-        <p>
-          This is a demonstration of Gwitter using NPM installation in a React
-          project with TypeScript.
-        </p>
-        <p>
-          Try different configuration presets below, then update the GitHub
-          credentials in
-          <code>src/config/gwitter.config.ts</code> with your actual repository
-          details.
-        </p>
-      </header>
-
       <main className="App-main">
-        <div className="demo-info">
-          <h2>📋 Current Configuration</h2>
-          <div className="config-display">
-            <div className="config-item">
-              <strong>Owner:</strong> {currentConfig.request.owner}
-            </div>
-            <div className="config-item">
-              <strong>Repository:</strong> {currentConfig.request.repo}
-            </div>
-            <div className="config-item">
-              <strong>Page Size:</strong> {currentConfig.request.pageSize}
-            </div>
-            <div className="config-item">
-              <strong>Only Show Owner:</strong>{' '}
-              {currentConfig.app?.onlyShowOwner ? 'Yes' : 'No'}
-            </div>
-            <div className="config-item">
-              <strong>Enable About:</strong>{' '}
-              {currentConfig.app?.enableAbout ? 'Yes' : 'No'}
-            </div>
-          </div>
-        </div>
-
         <div id="gwitter-container" className="gwitter-demo-container"></div>
       </main>
-
-      <footer className="App-footer">
-        <div className="footer-links">
-          <a
-            href="https://github.com/SimonAKing/Gwitter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            📚 Gwitter Repository
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }
