@@ -295,9 +295,9 @@
               // },
               request: {
                 token:
-                  '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',
-                clientID: 'Ov23li9UIvnkVifqEBrC',
-                clientSecret: 'c92a923ee1a3442038a12511a55db9ea5915783e',
+                  process.env.GITHUB_TOKEN,
+                clientID: process.env.GITHUB_CLIENT_ID,
+                clientSecret: process.env.GITHUB_CLIENT_SECRET,
                 pageSize: 6,
                 autoProxy:
                   'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
