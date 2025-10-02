@@ -28,13 +28,13 @@ export const config: GwitterConfig = {
     pageSize: 6,
     autoProxy:
       'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
-    owner: 'SimonAKing',
-    repo: 'weibo',
+    owner: 'szqipeng',
+    repo: 'shuoshuo',
   },
   app: {
     onlyShowOwner: true,
-    enableAbout: true,
+    enableAbout: false,
     enableRepoSwitcher: false,
-    enableEgg: true,
+    enableEgg: false,
   },
 };
