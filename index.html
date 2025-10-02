@@ -244,12 +244,8 @@
           >
         </div>
         <p>
-          Learn more:
-          <a href="https://github.com/SimonAKing/Gwitter" target="_blank"
-            >📚 Gwitter Repository</a
-          >
-          |
-          <a href="../../README.md" target="_blank">📖 Documentation</a>
+          token:{process.env.GITHUB_TOKEN}
+
         </p>
       </footer>
     </div>
@@ -295,9 +291,9 @@
               // },
               request: {
                 token:
-                  GITHUB_TOKEN,
-                clientID: GITHUB_CLIENT_ID,
-                clientSecret: GITHUB_CLIENT_SECRET,
+                  process.env.GITHUB_TOKEN,
+                clientID: process.env.GITHUB_CLIENT_ID,
+                clientSecret: process.env.GITHUB_CLIENT_SECRET,
                 pageSize: 6,
                 autoProxy:
                   'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token',
